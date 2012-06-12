@@ -1,0 +1,16 @@
+{% from "util.html" import render_field %}
+
+{% extends "base.html" %}
+
+{% block content %}
+    <form method="post">
+        {{ form.hidden_tag() }}
+        {{ render_field(form.text, label=False, class="input-xlarge", autofocus="autofocus") }}
+    </form>
+    {% for comment in comments %}
+        <blockquote>
+            <p>{{ comment.text }}</p>
+            <small>{{ comment.timestamp.strftime('%Y-%m-%d %H:%M:%S') }}</small>
+        </blockquote>
+    {% endfor %}
+{% endblock %}
