@@ -14,3 +14,11 @@ A boiler-plate starting point for a Flask web application, including SQLAlchemy 
 
     import uuid
     print uuid.uuid4().hex
+
+## Running
+
+    python main.py
+
+## Screenshot
+
+![](https://raw.github.com/fogleman/HelloFlask/master/screenshot.png)
