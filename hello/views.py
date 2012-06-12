@@ -16,4 +16,4 @@ def index():
         db.session.commit()
         return redirect(url_for('index'))
     comments = Comment.query.order_by(db.desc(Comment.timestamp))
-    return render_template('index.html', comments=comments, form=form)
+    return render_template('index.html', page_title = "Hello, Flask!", comments=comments, form=form)
