@@ -1,0 +1,9 @@
+# Simple .gitignore
+*.pyc
+*.pyd
+*.pyo
+*~
+*.bak
+*.log
+*.sqlite
+*.sqlite3
